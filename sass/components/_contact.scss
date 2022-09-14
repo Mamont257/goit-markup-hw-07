@@ -1,0 +1,41 @@
+.contact-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+
+    display: flex;
+    align-items: center;
+
+    fill: var(--second-text-color);
+
+    transition: color var(--animation),
+        fill var(--animation);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--logo-blue);
+    fill: var(--logo-blue);
+}
+
+.contact-icon {
+    margin-right: 10px;
+}
+
+/* .mail::before {
+    width: 16px;
+    height: 12px;
+    content: url(../images/envelope.svg);
+    /* content: url(../images/icons.svg#icon-envelope);     Нерозумію чому не працює */
+/* background-image: url(../images/icons.svg#icon-enverlope);
+    margin-right: 10px;
+}
+
+.telephone::before {
+    width: 10px;
+    height: 16px;
+    content: url(../images/smartphone.svg);
+    margin-right: 10px;
+} */

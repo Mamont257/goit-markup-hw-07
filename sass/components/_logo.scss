@@ -7,8 +7,18 @@
     letter-spacing: 0.03em;
 
     margin-right: 93px;
+
+.logo-icon {
+    color: var(--logo-blue);
+}    
 }
 
-.logo .logo-icon {
-    color: var(--logo-blue);
+.logo.footer-logo {
+    color: var(--text-color-while);   //подумати над зміною кольору
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 0px;
 }

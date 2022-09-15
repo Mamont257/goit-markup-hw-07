@@ -1,3 +1,15 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+    transform: translate(-50%, -50%);
+    background-color: var(--global-color);
+
+    padding: 40px;
+}
+
 .modal-close-btn {
     position: absolute;
     top: 8px;
@@ -14,15 +26,8 @@
     padding: 0;
 
     transition: fill var(--animation);
-}
 
-.modal-close-btn:hover {
-    fill: var(--logo-blue);
-}
-
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-
+    &:hover {
+        fill: var(--logo-blue);
+    }
 }

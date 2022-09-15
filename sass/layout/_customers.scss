@@ -1,0 +1,29 @@
+.customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.customers-menu {
+    display: flex;
+    column-gap: 30px;
+}
+
+.customers-link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    fill: var(--icon-color);
+
+    transition: border-color var(--animation),
+        fill var(--animation);
+
+    &:hover,
+    &:focus {
+        fill: var(--logo-blue);
+        border-color: var(--logo-blue);
+    }
+}

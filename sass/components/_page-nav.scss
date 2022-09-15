@@ -13,28 +13,23 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
-
     color: var(--text-color);
 
-    transition: color var(--animation);
-}
-
-.menu-link:hover,
-.menu-link:focus {
-    color: var(--logo-blue);
-}
-
-.menu-link {
     position: relative;
     padding-bottom: 32px;
+
+    transition: color var(--animation);
+
+&:hover,
+&:focus {
+    color: var(--logo-blue);
+}    
 }
 
 .line {
     color: var(--logo-blue);
-}
 
-.line::after {
+&::after {
     position: absolute;
     left: 0px;
     bottom: -1px;
@@ -44,4 +39,5 @@
     background-color: var(--logo-blue);
     border-radius: 2px;
     content: '';
+}    
 }

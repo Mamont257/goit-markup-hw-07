@@ -12,12 +12,12 @@
 
     transition: color var(--animation),
         fill var(--animation);
-}
 
-.contact-link:hover,
-.contact-link:focus {
+&:hover,
+&:focus {
     color: var(--logo-blue);
     fill: var(--logo-blue);
+}        
 }
 
 .contact-icon {

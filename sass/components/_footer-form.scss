@@ -1,0 +1,48 @@
+.footer-input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    align-items: center;
+
+    background-color: transparent;
+    width: 358px;
+    height: 50px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    color: var(--global-color);
+
+&:focus {
+    outline: none;
+}
+
+}
+
+.footer-btn-submit {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--global-color);
+
+    background-color: var(--logo-blue);
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.footer-form-position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+}

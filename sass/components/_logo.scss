@@ -1,14 +1,12 @@
-.logo {
+ .logo {
+    @include font(700, 26px, 31px);
     color: var(--logo-black);
     font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
     letter-spacing: 0.03em;
 
     margin-right: 93px;
 
-.logo-icon {
+.logo__icon {
     color: var(--logo-blue);
 }    
 }

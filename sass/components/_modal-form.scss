@@ -1,7 +1,5 @@
 .form-title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    @include font(700, 20px, 23px);
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -10,15 +8,10 @@
 }
 
 .form-text {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
+    @include font($fs: 12px, $lh: 14px);
     letter-spacing: 0.01em;
-
     color: var(--second-text-color);
-
     margin-bottom: 10px;
-
     display: block;
 }
 
@@ -33,7 +26,6 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 42px;
-
     transition: border-color var(--animation);
 
     &:focus {
@@ -52,7 +44,6 @@
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
-
     transition: fill var(--animation);
 
     .form-input:focus + & {
@@ -78,9 +69,7 @@
     }
 
     &::placeholder {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.17;
+        @include font($fs: 12px, $lh: 14px);
         letter-spacing: 0.01em;
     
         color: rgba(117, 117, 117, 0.5);
@@ -92,9 +81,7 @@
 }
 
 .submit-btn {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+    @include font(700, 16px, 30px);
     letter-spacing: 0.06em;
 
     color: var(--global-color);
@@ -112,9 +99,7 @@
 }
 
 .text-politic {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    @include font($fs: 14px, $lh: 24px);
     letter-spacing: 0.03em;
     text-align: center;
 
@@ -126,10 +111,8 @@
 }
 
 .form-checkbox {
-    display: flex;
+    @extend %align;
     margin-bottom: 30px;
-    align-items: center;
-    justify-content: center;
     column-gap: 8px;
 }
 

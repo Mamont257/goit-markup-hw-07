@@ -22,6 +22,12 @@
   --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.customers-link, .social-list-link, .img-text, .icon-position, .footer-form-position, .footer-btn-submit, .social-list-link-footer, .form-checkbox, .modal-close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hide {
   position: absolute;
   white-space: nowrap;
@@ -110,15 +116,15 @@ body {
 }
 
 .logo {
-  color: var(--logo-black);
-  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: 1.1923076923;
+  color: var(--logo-black);
+  font-family: var(--secondary-font);
   letter-spacing: 0.03em;
   margin-right: 93px;
 }
-.logo .logo-icon {
+.logo .logo__icon {
   color: var(--logo-blue);
 }
 
@@ -142,17 +148,17 @@ body {
   column-gap: 50px;
 }
 
-.menu-link {
+.menu__link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1428571429;
   letter-spacing: 0.02em;
   color: var(--text-color);
   position: relative;
   padding-bottom: 32px;
   transition: color var(--animation);
 }
-.menu-link:hover, .menu-link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--logo-blue);
 }
 
@@ -162,7 +168,7 @@ body {
 .line::after {
   position: absolute;
   left: 0px;
-  bottom: -1px;
+  bottom: -1.5px;
   display: block;
   width: 100%;
   height: 5px;
@@ -171,10 +177,10 @@ body {
   content: "";
 }
 
-.contact-link {
+.contact__link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1428571429;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
   display: flex;
@@ -182,12 +188,12 @@ body {
   fill: var(--second-text-color);
   transition: color var(--animation), fill var(--animation);
 }
-.contact-link:hover, .contact-link:focus {
+.contact__link:hover, .contact__link:focus {
   color: var(--logo-blue);
   fill: var(--logo-blue);
 }
 
-.contact-icon {
+.contact__icon {
   margin-right: 10px;
 }
 
@@ -209,7 +215,7 @@ body {
 .title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
+  line-height: 1.1666666667;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
@@ -253,9 +259,6 @@ body {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 0;
   transition: fill var(--animation);
 }
@@ -276,7 +279,7 @@ body {
 .form-text {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: var(--second-text-color);
   margin-bottom: 10px;
@@ -334,7 +337,7 @@ body {
 .form-feedback::placeholder {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -346,7 +349,7 @@ body {
 .submit-btn {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--global-color);
   display: block;
@@ -364,7 +367,7 @@ body {
 .text-politic {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--second-text-color);
@@ -375,10 +378,7 @@ body {
 }
 
 .form-checkbox {
-  display: flex;
   margin-bottom: 30px;
-  align-items: center;
-  justify-content: center;
   column-gap: 8px;
 }
 
@@ -421,7 +421,7 @@ body {
 .footer-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--global-color);
@@ -433,8 +433,9 @@ body {
 }
 
 .footer-adress {
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   font-style: normal;
   color: var(--text-color-while);
@@ -476,11 +477,8 @@ body {
 }
 
 .social-list-link-footer {
-  display: flex;
   height: 44px;
   width: 44px;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color var(--animation);
@@ -510,7 +508,7 @@ body {
 .footer-btn-submit {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--global-color);
   background-color: var(--logo-blue);
@@ -519,16 +517,10 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   column-gap: 10px;
 }
 
 .footer-form-position {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   column-gap: 12px;
 }
 
@@ -546,7 +538,7 @@ body {
   margin: 0 auto;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -560,7 +552,7 @@ body {
   margin-right: auto;
 }
 
-.hero-btn {
+.hero__btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -577,8 +569,13 @@ body {
   border: transparent;
   transition: background-color var(--animation);
 }
-.hero-btn:hover, .hero-btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   background-color: #188CE8;
+}
+
+.about-us {
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .about-us-title {
@@ -607,17 +604,9 @@ body {
   color: var(--second-text-color);
 }
 
-.about-us {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-
 .icon-position {
-  display: flex;
   width: 270px;
   height: 120px;
-  align-items: center;
-  justify-content: center;
   background-color: var(--secong-color);
   border-radius: 4px;
   margin-bottom: 30px;
@@ -660,9 +649,6 @@ body {
   width: 100%;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .team {
@@ -722,11 +708,8 @@ body {
 }
 
 .social-list-link {
-  display: flex;
   height: 44px;
   width: 44px;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
   fill: #AFB1B8;
   transition: background-color var(--animation), fill var(--animation);
@@ -747,11 +730,8 @@ body {
 }
 
 .customers-link {
-  display: flex;
   width: 170px;
   height: 92px;
-  align-items: center;
-  justify-content: center;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   fill: var(--icon-color);

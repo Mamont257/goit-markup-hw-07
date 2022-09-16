@@ -1,7 +1,5 @@
 .footer-input {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
+    @include font($fs: 16px, $lh: 20px);
     letter-spacing: 0.03em;
     align-items: center;
 
@@ -21,9 +19,7 @@
 }
 
 .footer-btn-submit {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+    @include font(700, 16px, 30px);
     letter-spacing: 0.06em;
     color: var(--global-color);
 
@@ -34,15 +30,11 @@
     border: 0;
     border-radius: 4px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %align;
     column-gap: 10px;
 }
 
 .footer-form-position {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %align;
     column-gap: 12px;
 }

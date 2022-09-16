@@ -62,11 +62,9 @@
 }
 
 .social-list-link {
-    display: flex;
+    @extend %align;
     height: 44px;
     width: 44px;
-    align-items: center;
-    justify-content: center;
     border-radius: 50%;
     fill: #AFB1B8;
 

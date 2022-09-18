@@ -1,8 +1,8 @@
-.footer-menu {
+.adress__menu {
     width: 231px;
 }
 
-.footer-adress {
+.adress__in-map {
     @include font($fs: 14px, $lh: 24px);
     letter-spacing: 0.03em;
     font-style: normal;
@@ -17,7 +17,7 @@
 } 
 }
 
-.footer-contact {
+.adress__contact {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -33,7 +33,7 @@
 }    
 }
 
-.list-item {
+.adress__item {
     margin-bottom: 9px;
 
 &:last-child {

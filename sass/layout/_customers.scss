@@ -3,12 +3,12 @@
     padding-bottom: 94px;
 }
 
-.customers-menu {
+.customers__menu {
     display: flex;
     column-gap: 30px;
 }
 
-.customers-link {
+.customers__link {
     @extend %align;
     width: 170px;
     height: 92px;

@@ -1,4 +1,4 @@
-.form-title {
+.form__title {
     @include font(700, 20px, 23px);
     text-align: center;
     letter-spacing: 0.03em;
@@ -7,7 +7,7 @@
     margin-bottom: 12px;
 }
 
-.form-text {
+.form__item {
     @include font($fs: 12px, $lh: 14px);
     letter-spacing: 0.01em;
     color: var(--second-text-color);
@@ -15,12 +15,12 @@
     display: block;
 }
 
-.form-text-name {
+.form__name {
     display: block;
     margin-bottom: 4px;
 }
 
-.form-input {
+.form__input {
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -34,24 +34,24 @@
     }
 }
 
-.form-input-icon {
+.form__input-icon {
     position: relative;
     display: block;
 }
 
-.form-icon {
+.form__icon {
     position: absolute;
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
     transition: fill var(--animation);
 
-    .form-input:focus + & {
+    .form__input:focus + & {
         fill: var(--logo-blue);
     }
 }
 
-.form-feedback {
+.form__feedback {
     width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -76,11 +76,11 @@
     }
 }
 
-.form-textarea {
+.form__textarea {
     margin-bottom: 20px;
 }
 
-.submit-btn {
+.form-submit-btn {
     @include font(700, 16px, 30px);
     letter-spacing: 0.06em;
 
@@ -98,7 +98,7 @@
     border-radius: 4px;
 }
 
-.text-politic {
+.form-checkbox__text-politic {
     @include font($fs: 14px, $lh: 24px);
     letter-spacing: 0.03em;
     text-align: center;
@@ -106,7 +106,7 @@
     color: var(--second-text-color);
 }
 
-.form-link {
+.form-checkbox__politic-link {
     color: var(--logo-blue);
 }
 
@@ -116,7 +116,7 @@
     column-gap: 8px;
 }
 
-.form-checkbox-icon {
+.form-checkbox__icon {
     width: 16px;
     height: 15px;
     border: 2px solid var(--text-color);
@@ -124,17 +124,17 @@
 
     transition: background-color var(--animation), border-color var(--animation);
 
-    .form-chackbox-input:checked+& {
+    .form-checkbox__input:checked+& {
         background-color: var(--logo-blue);
         border-color: transparent;
     }
 }
 
-.form-checkbox-use {
+.form-checkbox__use {
     display: none;
     fill: white;
 
-    .form-chackbox-input:checked+.form-checkbox-icon & {
+    .form-checkbox__input:checked+.form-checkbox__icon & {
         display: block;
     }
 }
@@ -142,6 +142,6 @@
 
 
 
-/* .form-chackbox-input:focus + .form-checkbox-icon {
+/* .form-checkbox__input:focus + .form-checkbox__icon {
     box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.7);
 } */

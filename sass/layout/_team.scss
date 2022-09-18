@@ -5,12 +5,12 @@
     padding-top: 94px;
 }
 
-.team-menu {
+.team__menu {
     display: flex;
     column-gap: 30px;
 }
 
-.team-menu-item {
+.team__item {
     flex-basis: calc((100% - 90px)/4);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -19,7 +19,7 @@
     background-color: var(--global-color);
 }
 
-.team-name {
+.team__name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -32,7 +32,7 @@
     padding-top: 30px;
 }
 
-.team-job {
+.team__job {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -43,38 +43,25 @@
     margin-bottom: 16px;
 }
 
-.team-img {
+.team__img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-.social-list-icon {
-    width: 20px;
-    height: 20px;
-}
-
-.social-list {
-    display: flex;
-    justify-content: center;
-    column-gap: 10px;
+.team__social-list {         //mixin
     padding-bottom: 30px;
 }
 
-.social-list-link {
-    @extend %align;
-    height: 44px;
-    width: 44px;
-    border-radius: 50%;
+.social-list__link-silver {   //modeficator
     fill: #AFB1B8;
 
     transition: background-color var(--animation),
-        fill var(--animation);
+    fill var(--animation);
 
-&:hover,
-&:focus {
-    background-color: var(--logo-blue);
-    fill: var(--global-color);
-}
-
+    &:hover,
+    &:focus {
+        background-color: var(--logo-blue);
+        fill: var(--global-color);
+    }
 }

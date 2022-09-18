@@ -1,26 +1,9 @@
-.social-list-icon-footer {
-    width: 20px;
-    height: 20px;
-    fill: var(--global-color);
-}
-
-.social-list-footer {
-    display: flex;
-    justify-content: center;
-    column-gap: 10px;
-}
-
-.social-list-link-footer {
-    @extend %align;
-    height: 44px;
-    width: 44px;
-    border-radius: 50%;
+.social-list__link-footer {                             //modeficator
     background-color: rgba(255, 255, 255, 0.1);
-
     transition: background-color var(--animation);
 
-&:hover,
-&:focus {
-    background-color: var(--logo-blue);
-}
+    &:hover,
+    &:focus {
+        background-color: var(--logo-blue);
+    }
 }

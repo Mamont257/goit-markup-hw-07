@@ -11,12 +11,9 @@
 }    
 }
 
-.logo.footer-logo {
-    color: var(--text-color-while);   //подумати над зміною кольору
-}
-
-.footer-logo {
+.footer__logo {
     display: inline-block;
     margin-bottom: 20px;
     margin-right: 0px;
+    color: var(--text-color-while);
 }

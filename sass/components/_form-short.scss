@@ -1,4 +1,9 @@
-.footer-input {
+.form-short {
+    @extend %align;
+    column-gap: 12px;
+}
+
+.form-short__input {
     @include font($fs: 16px, $lh: 20px);
     letter-spacing: 0.03em;
     align-items: center;
@@ -18,7 +23,7 @@
 
 }
 
-.footer-btn-submit {
+.form-short__btn-submit {
     @include font(700, 16px, 30px);
     letter-spacing: 0.06em;
     color: var(--global-color);
@@ -32,9 +37,4 @@
 
     @extend %align;
     column-gap: 10px;
-}
-
-.footer-form-position {
-    @extend %align;
-    column-gap: 12px;
 }

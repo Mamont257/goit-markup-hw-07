@@ -1,27 +1,27 @@
-.we-doing-menu {
+.we-doing {
+    padding-bottom: 94px;
+}
+
+.we-doing__menu {
     display: flex;
     column-gap: 30px;
 }
 
-.we-doing-item {
+.we-doing__item {
     flex-basis: calc((100% - 60px) /3);
 }
 
-.we-doing-img {
+.we-doing__img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-.we-doing {
-    padding-bottom: 94px;
-}
-
-.img-fone {
+.we-doing__img-fone {
     position: relative;
 }
 
-.img-text {
+.we-doing__img-text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
